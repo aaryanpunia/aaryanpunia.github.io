@@ -1,48 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-h1 {
-  font-family: "Ubuntu Mono", monospace;
-  font-weight: 700;
-  font-style: normal;
+/* Base styles */
+html {
+  font-size: 16px; /* Changed from 14px for better readability */
 }
 
-h2 {
+body {
   font-family: "Ubuntu Mono", monospace;
-  font-weight: 700;
-  font-style: normal;
+  line-height: 1.6;
+  color: white;
+  background-image: url('./bg1.png');
+  background-size: cover;
 }
 
-h3 {
-  font-family: "Ubuntu Mono", monospace;
+h1, h2, h3 {
   font-weight: 700;
-  font-style: normal;
 }
 
-p {
-  font-family: "Ubuntu Mono", monospace;
+p, a, ol {
   font-weight: 400;
-  font-style: normal;
 }
 
 a {
-  font-family: "Ubuntu Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
   color: white;
 }
 
-ol {
-  font-family: "Ubuntu Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 22px;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+/* Media query for laptops and larger screens */
+@media screen and (min-width: 1024px) {
+  html { font-size: 20px; }
+
+  body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 { font-size: 2.5rem; } /* 50px */
+  h2 { font-size: 2rem; }   /* 40px */
+  h3 { font-size: 1.75rem; } /* 35px */
+  p, a, ol { font-size: 1rem; } /* 20px */
 }
 
-#homepage-bg {
-	padding-top: 12em;
-	padding-left: 24em;
-	padding-right: 24em;
-	color: white;
-	background-image: url('./bg1.png');
-	background-size: cover;
+/* Media query for tablets and larger screens */
+@media screen and (min-width: 768px) {
+  html { font-size: 18px; }
+  
+  h1 { font-size: 2rem; }    /* 36px */
+  h2 { font-size: 1.75rem; } /* 31.5px */
+  h3 { font-size: 1.5rem; }  /* 27px */
+  p, a, ol { font-size: 1rem; } /* 18px */
 }
+
+/* Typography */
+h1 { font-size: 1.75rem; }  /* 28px */
+h2 { font-size: 1.5rem; }   /* 24px */
+h3 { font-size: 1.25rem; }  /* 20px */
+p, a, ol { font-size: 1rem; } /* 16px */
+
